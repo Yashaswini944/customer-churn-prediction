@@ -4,58 +4,49 @@
 This project builds a complete, production‑style machine learning pipeline to predict customer churn for a telecom company. It covers everything from data cleaning and feature engineering to model optimization and business insights.
 The final Gradient Boosting model delivers strong recall and ROC‑AUC, making it effective for identifying customers at high risk of leaving.
 
-🧠 Problem Statement
-Customer churn is one of the biggest challenges for subscription‑based businesses.
-The goal of this project is to:
+📂 Dataset
+The dataset used is the Telco Customer Churn dataset, which contains customer demographics, account information, and service usage details.
 
-Predict which customers are likely to churn
+Key columns include:
 
-Understand the key drivers behind churn
+Customer tenure
 
-Provide actionable recommendations to reduce churn
+Monthly and total charges
 
-🧠 Problem Statement
-Customer churn is one of the biggest challenges for subscription‑based businesses.
-The goal of this project is to:
+Contract type
 
-Predict which customers are likely to churn
+Internet and phone services
 
-Understand the key drivers behind churn
+Payment method
 
-Provide actionable recommendations to reduce churn
+Churn label (Yes/No)
 
-🛠️ Machine Learning Pipeline
-The project follows a full, industry‑standard ML workflow:
+🔧 Data Preprocessing
+Steps performed:
 
-1. Data Preprocessing
-Handle missing values
+Removed duplicate or irrelevant columns
 
-Convert TotalCharges to numeric
+Handled missing values
 
-Encode categorical variables
+Converted categorical variables using Label Encoding
 
-Scale numerical features
+Scaled numerical features using StandardScaler
 
-2. Handling Class Imbalance
-Applied SMOTE to balance churn vs. non‑churn customers
+Split data into train/test sets
 
-3. Model Training
-Trained multiple models:
+🤖 Model Training
+The model used for churn prediction is:
 
-Logistic Regression
+Gradient Boosting Classifier
+Tuned hyperparameters
 
-Random Forest
+Trained on processed features
 
-Gradient Boosting
+Saved as churn_model.pkl for future use
 
-4. Hyperparameter Tuning
-RandomizedSearchCV
+📈 Model Performance
+The model was evaluated using:
 
-GridSearchCV
-
-Optimized Gradient Boosting selected as final model
-
-5. Evaluation Metrics
 Accuracy
 
 Precision
@@ -64,58 +55,36 @@ Recall
 
 F1‑Score
 
-ROC‑AUC
+ROC‑AUC Score
 
 Confusion Matrix
 
-🏆 Final Model
-Gradient Boosting Classifier
+These metrics help assess how well the model identifies churn vs. non‑churn customers.
 
-Why this model?  
-It achieved the best balance of:
-
-High recall for churners
-
-Strong ROC‑AUC
-
-Stable performance across folds
-
-This makes it ideal for real‑world retention strategies.
-
-🔍 Feature Importance
-Top drivers of churn identified by the model:
-
-Month‑to‑month contracts
-
-Low tenure
-
-High monthly charges
-
-Electronic check payments
-
-Lack of tech support
-
-These insights directly inform business strategy.
-
-💡 Business Recommendations
-Based on the model’s insights:
-
-Offer incentives for long‑term contracts
-
-Improve onboarding for new customers
-
-Provide loyalty pricing for fiber customers
-
-Encourage autopay or credit card payments
-
-Bundle tech support with mid‑tier plans
-
-These actions can significantly reduce churn and improve customer retention.
+📊 Final Output: Feature Importance
+The final output of the project is the Feature Importance visualization, which highlights the most influential factors contributing to customer churn.
 
 📁 Project Structure
-├── Churn_Prediction_Project.ipynb
-├── churn_model.pkl
+
+customer-churn-prediction/
+│
+├── data/
+│   └── Telco-Customer-Churn.csv
+│
+├── notebooks/
+│   └── Churn_Prediction_Project.ipynb
+│
+├── models/
+│   └── churn_model.pkl
+│
+├── images/
+│   ├── confusion_matrix.png
+│   └── feature_importance.png
+│
 ├── requirements.txt
 └── README.md
 
+🎯 Conclusion
 
+This project demonstrates a complete end‑to‑end machine learning workflow for predicting customer churn.
+The feature importance visualization provides actionable insights for business decision‑making and customer retention strategies.
