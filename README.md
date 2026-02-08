@@ -72,14 +72,14 @@ The final output of the project is the Feature Importance visualization, which h
 ```
 customer-churn-prediction/
 │
-├── data/
-│   └── Telco-Customer-Churn.csv
+├── Telco-Customer-Churn.csv
+│   
 │
-├── notebooks/
-│   └── Churn_Prediction_Project.ipynb
+├── Churn_Prediction_Project.ipynb
+│   
 │
-├── models/
-│   └── churn_model.pkl
+├── churn_model.pkl
+│   
 │
 ├── confusion_matrix.png
 ├── feature_importance.png
