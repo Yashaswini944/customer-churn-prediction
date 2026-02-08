@@ -64,6 +64,9 @@ These metrics help assess how well the model identifies churn vs. non‑churn cu
 📊 Final Output: Feature Importance
 The final output of the project is the Feature Importance visualization, which highlights the most influential factors contributing to customer churn.
 
+## 📈 Confusion Matrix ![Confusion Matrix](confusion_matrix.png) 
+## 📊 Final Output: Feature Importance ![Feature Importance](feature_importance.png)
+
 ## 📁 Project Structure
 
 ```
@@ -78,9 +81,8 @@ customer-churn-prediction/
 ├── models/
 │   └── churn_model.pkl
 │
-├── images/
-│   ├── confusion_matrix.png
-│   └── feature_importance.png
+├── confusion_matrix.png
+├── feature_importance.png
 │
 ├── requirements.txt
 └── README.md
