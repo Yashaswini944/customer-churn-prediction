@@ -64,8 +64,9 @@ These metrics help assess how well the model identifies churn vs. non‑churn cu
 📊 Final Output: Feature Importance
 The final output of the project is the Feature Importance visualization, which highlights the most influential factors contributing to customer churn.
 
-📁 Project Structure
+## 📁 Project Structure
 
+```
 customer-churn-prediction/
 │
 ├── data/
@@ -83,6 +84,7 @@ customer-churn-prediction/
 │
 ├── requirements.txt
 └── README.md
+```
 
 🎯 Conclusion
 
